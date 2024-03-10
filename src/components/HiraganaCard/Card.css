@@ -1,0 +1,159 @@
+.main-page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	height: 85vh;
+	width: 100vw;
+}
+
+.question-card {
+	margin-top: 100px;
+	width: 350px;
+	height: 450px;
+	position: absolute;
+	background-color: #0AA319; /*#0AA319*/
+	display: flex;
+	flex-direction: column;
+	z-index: 5;
+	border-radius: 20px;
+	align-items: center;
+	padding-top: 50px;
+	box-shadow: 0px 0px 20px 0px #000000;
+}
+@media (max-width: 768px) {
+	.question-card {
+			width: 300px;
+	}
+}
+
+.question-card__symbol {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease-in-out;
+}
+
+.question-card__symbol__text {
+	color: #fff;
+	font-size: 80px;
+	text-decoration: none;
+	transition: 0.5s ease-in-out;
+}
+
+.question-card__pronaunce {
+	padding-top: 32px;
+}
+
+.pronaunce {
+	color: #fff;
+	font-family: monserat-jp, sans-serif;
+	font-size: 16px;
+}
+
+/* Input */
+
+.text-here {
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	width: 200px;
+	margin: 10px;
+	text-align: center;
+	font-size: 16px;
+	height: 30px;
+	margin-top: 20px;
+}
+
+.text-here::placeholder {
+	padding-right: 40px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	padding-top: 10px;
+}
+
+.button {
+	background-color: #9154F5;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	width: 90px;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+	transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+	background-color: #7623FD;
+	transition: 0.3s ease-in-out;
+	width: 94px;
+	height: 32px;
+}
+
+@media (max-width: 768px) {
+	.button:hover {
+		background-color:  #9154F5;
+		width: 90px;
+		height: 30px;
+	}
+}
+
+
+
+.hint-button{
+	/* margin: 10px 20px; */
+	position: absolute;
+	color: #fff;
+	width: 90px;
+	height: 30px;
+	background-color: #454545;
+	border-radius: 10px;
+	border: 1px solid #000;
+	/* margin-top: 20px; */
+	font-size: 16px;
+	transition: 0.3s ease-in-out;
+	bottom: 50px;
+	left: 130px;
+}
+
+@media (max-width: 768px) {
+	.hint-button {
+		bottom: 50px;
+		left: 105px;
+	}
+}
+
+.hint-button:hover{
+	transition: 0.3s ease-in-out;
+	width: 94px;
+	height: 32px;
+}
+@media (max-width: 768px) {
+	.hint-button:hover {
+		width: 90px;
+		height: 30px;
+	}
+}
+
+
+.hint-text{
+	color: #fff;
+	font-size: 20px;
+	align-items: center;
+	padding-top: 2px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	width: 90px;
+	height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #454545;
+}
